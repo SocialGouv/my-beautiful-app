@@ -1,0 +1,17 @@
+{
+  "name": "@my-beautiful-app/server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/index.ts"
+  },
+  "dependencies": {
+    "pg": "^8.11.3",
+    "jsonwebtoken": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.10.2",
+    "@types/jsonwebtoken": "^9.0.2"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "my-beautiful-app",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:client": "yarn workspace @my-beautiful-app/client dev",
+    "dev:server": "yarn workspace @my-beautiful-app/server dev", 
+    "dev": "concurrently \"yarn dev:server\" \"yarn dev:client\"",
+    "seed:db": "node packages/server/src/scripts/seedDb.js"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "typescript": "5.4.3"
+  }
+}
